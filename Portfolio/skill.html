@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<link rel="stylesheet" href="https://use.typekit.net/zti7dna.css">
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background-image: url('Skill_bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.text1{
+		font-family: montserrat;
+		font-size: 4vw;
+		margin-top: 14vh;
+		text-align: center;
+		color: white;
+	}
+
+	.container{
+		margin-top: 14vh;
+		animation-name: displayy;
+		animation-duration: 1s;
+		display: block;
+		text-align: center;
+	}
+
+@keyframes displayy {
+  from {display: noen;}
+  to {display: block;}
+}
+	.container .skill_line1{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	img{
+		height: 7.7vw;
+		width: auto;
+		border: solid;
+		border-radius: 100px;
+		border-color: #51ff0d;
+		border-width: 2px;
+	}
+
+	img:hover{
+		border: solid;
+		border-width: 2px;
+		border-color: #14626c;
+	}
+
+	.skill_line2{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.art:hover, .coding:hover{
+		text-decoration: underline;
+		cursor: pointer;
+		transform: translateY(-1vh);
+		transition-duration: 0.5s;
+	}
+
+	.art::before{
+		content: '';
+		border-bottom: 2px solid black;
+		width: 7vw;
+		left: 4%;
+		bottom: -4%;
+		position: absolute;
+		transform: scaleX(0);
+	}
+
+	.art:hover:before{
+		transform: scaleX(1);
+		transition: transform 0.5s ease-out;
+		box-shadow: 0px -1px 3px white;
+	}
+
+	.artname{
+		display: none;
+		color: whitesmoke;
+		font-family: montserrat;
+		font-size: 1.4vw;
+	}
+
+	.art:hover .artname{
+		display: block;
+	}
+</style>
+
+<body>
+<div class="text1">geek7</div>
+<div class="container">
+	<!-- Skill line 1-->
+	<div class="skill_line1">
+		<!-- Art -->
+		<div class="art"><a href="Art/art.html" style="text-decoration: none;">
+			<img src="3d.png">
+			<div class = "artname">3d</div>
+		</a>
+		</div>
+		<!-- Website -->
+		<div class="art"><a href="Website_page/coding.html" style="text-decoration: none;">
+			<img src="coding.png">
+			<div class = "artname">Coding</div>
+		</a>
+		</div>
+		<!-- designing -->
+		<div class="art"><a href="designing/designing.html" style="text-decoration: none;">
+			<img src="designign.png">
+			<div class = "artname">Designing</div>
+		</a>
+		</div>
+	<!-- Music -->
+	<div class="art"><a href="Music/music.html" style="text-decoration: none;">
+			<img src="music.png">
+			<div class = "artname">Music</div>
+		</a>
+		</div>
+	</div>	
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!-- Skill line2 -->
+	<div class="skill_line2">
+		<!-- Writing -->
+		<div class="art"><a href="Writing/writing.html" style="text-decoration: none;">
+			<img src="writing.png">
+			<div class = "artname">Writing</div>
+		</a>
+		</div>
+
+		<!-- Editing -->
+		<div class="art"><a href="Editing/editing.html" style="text-decoration: none;">
+			<img src="editing.png">
+			<div class = "artname">Editing</div>
+		</a>
+		</div>
+
+		<!-- Draw -->
+		<div class="art"><a href="Sketchbook/draw.html" style="text-decoration: none;">
+			<img src="draw.png">
+			<div class = "artname">Drawing</div>
+		</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
